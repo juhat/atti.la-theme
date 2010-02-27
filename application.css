@@ -9,3 +9,88 @@
   border: 1px solid red;
   min-height: 500px;
 }
+/* BASE STYLES */
+a, a:visited, a:active { color: blue; }
+a:hover { color: #822; text-decoration: none; }
+a img { border: 0; }
+
+p { margin: 1.5em 0 1.5em; }
+ul, ol { margin: 0 1em 1.5em; padding: 0 1em; }
+blockquote { border-left: 2px solid #600; color: #666; font-style: italic; margin: 0 1em 1.5em; padding: 0 1em; }
+
+h1, h2, h3, h4, h5, h6 { font-weight: normal; margin: 0; }
+h2 { font-size: 1.5em; line-height: 1.1em; margin: 0 0 1em; }
+
+/* POSTEROUS NAV */
+#posterous-nav-outer { background: {color:Accent Color}; color: #fff; padding-top: 5px; padding-bottom: 5px; text-align: center; }
+div.posterous_topnav_container { font-size: 11px; list-style-type: none; margin: 0 auto; text-align: right; width: 610px; }
+div.posterous_topnav_container li { display: inline; margin-left: 0.75em;  }
+div.posterous_topnav_container li a { color: #eee; }
+
+#header { margin: 60px 0 10px; padding: 0 0 0.5em; }
+#header h1 { font-size: 3em; line-height: 1; margin: 0; }
+#header h1 a { text-decoration: none; }
+#header h2 { font-size: 1em; font-style: italic; line-height: 1.5; margin: 0.75em 0; }
+
+/* POST STYLES */
+.post { border-bottom: 1px solid #ccc; margin: 0 0 20px; padding: 0 0 20px; position: relative;    }
+.post_show { border-bottom: none; }
+.date { font-size: 1.1em; font-variant: small-caps; position: absolute; left: -100px; top: 25px; text-align: right; width: 80px; z-index:100;}
+.date a { background: #222; color: #eee; display: block; text-align: center; text-decoration: none; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; padding:6px 4px 4px 4px;}
+.date a:hover { background: #822; color: #fff; }
+.post-footer { font-size: 0.71428em; line-height: 1.66667em; margin: 1.5em 0; text-align: right; }
+.posterous_quote_citation { margin: 10px 0px 10px 0px;}
+.bodytext { padding-top: 24px;
+           font-family: Arial,"MS Trebuchet",sans-serif;
+           font-size: 1.2em;
+           font-weight:400;
+           font-style:normal;
+           color:#222222;
+           line-height:1.5em;
+}
+div.bodytext > *:first-child { margin-top: 0px !important; margin-bottom: 0px !important; }
+.bodytext h2 a { text-decoration: none; }
+
+/* EDITBOX */
+.editbox a { text-decoration: none; font-family: Arial, Helvetica, sans-serif; font-size: 10px; }
+.editbox ul { margin: 0px; padding: 0px; }
+div.editbox { visibility: hidden; height: 16px; position: absolute; top: 0px; }
+div.post:hover div.editbox { visibility: visible; }
+
+
+/* PAGINATION */
+.pagination { font-size: 0.85714em; text-align: center; }
+.pagination a, .pagination .current, .pagination .prev_page, .pagination .next_page { padding: 0 0.5em; text-decoration: none; }
+.pagination a:hover { background: {color:Accent Color}; color: #eee; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px;  }
+.pagination .current { background: {color:Accent Color}; color: #eee; font-weight: bold; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; }
+.pagination .disabled { color: #aaa; }
+
+/* EDITBOX */
+.editbox a { text-decoration: none; font-family: Arial, Helvetica, sans-serif; font-size: 10px; }
+.editbox ul { margin: 0px; padding: 0px; }
+ 
+div.editbox { visibility: hidden; height: 16px; position: absolute; top: 0px; }
+div.post:hover div.editbox { visibility: visible; }
+
+/* SEARCH */
+.searchunit { font-size: 11px; }
+
+/* COMMENTING */
+.spanningheader { position: absolute; left: -100px; display: none;   }                
+.spanningheader h4 { margin: 0 0 !important; font-size: 10px !important;  font-weight: normal !important;  }
+
+/* SECONDARY */
+#secondary { border-top: 1px solid #ccc; margin: 3em 0 0; padding: 1.5em 0; }
+#secondary h3 { font-size: 1.2em; margin: 0 0 0.9em; }
+
+#secondary .user_info { float: right; font-size: 0.85714em; text-align: right; width: 110px; }
+#secondary .user_info img { border: 1px solid #333; }
+#secondary #about, #secondary #rss { margin-right: 120px; }
+#secondary #rss { background: transparent url(http://www.feedicons.com/images/feed-icon-14x14.png) no-repeat left center; padding-left: 25px; }
+
+#theme-meta { color: #666; font-size: 0.85714em; list-style-type: none; margin: 3em 0 0; text-align: center; padding: 0; }
+#theme-meta li { display: inline; font-size: 0.85714em; }
+
+#posterous_bar { left: 50%; margin-left: -250px; top: 10px;}
+div.posterousHeaderExpandedDivLeft, div.posterousHeaderExpandedDivRight { background-color: {color:Background} !important;}
+.posterous_retweet_widget a { text-decoration: none; }
