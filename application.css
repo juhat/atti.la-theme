@@ -1,36 +1,42 @@
 #hd{
-  height: 200px;
-  background:#ccc;
+  height: 120px;
 }
 #bd{
-  border:1px solid #222;
 }
 #content{
-  border: 1px solid red;
   min-height: 500px;
 }
 /* BASE STYLES */
-a, a:visited, a:active { color: blue; }
-a:hover { color: #822; text-decoration: none; }
+html{
+  bbackground: url(images/pattern.png) repeat-x;
+}
+body{
+  font-family: Skolar,Georgia,Cambria,"Times New Roman",Times,serif;
+  color:#222;
+}
+a, a:visited, a:active { color: #919f20; }
+a:hover { color: #000; text-decoration: none; }
 a img { border: 0; }
 
 p { margin: 1.5em 0 1.5em; }
 ul, ol { margin: 0 1em 1.5em; padding: 0 1em; }
-blockquote { border-left: 2px solid #600; color: #666; font-style: italic; margin: 0 1em 1.5em; padding: 0 1em; }
+blockquote { border-left: 2px solid #600; color: #666; font-style: italic; margin: 0 1em 1.5em 3em; padding: 0 1em; }
+blockquote[style] { border-left: 2px solid #600 !important; color: #666 !important; font-style: italic !important; 
+  margin: 0 1em 1.5em 3em !important; padding: 0 1em !important; }
 
-h1, h2, h3, h4, h5, h6 { font-weight: normal; margin: 0; }
-h2 { font-size: 1.5em; line-height: 1.1em; margin: 0 0 1em; }
+h1, h2, h3, h4, h5, h6 { font-weight: normal; margin: 0; color: #919F20; }
+h2 { font-size: 1.5em; line-height: 1.1em; margin: 0 0 1em 0; }
 
 /* POSTEROUS NAV */
-#posterous-nav-outer { background: {color:Accent Color}; color: #fff; padding-top: 5px; padding-bottom: 5px; text-align: center; }
+#posterous-nav-outer { color: #fff; padding-top: 5px; padding-bottom: 5px; text-align: center; }
 div.posterous_topnav_container { font-size: 11px; list-style-type: none; margin: 0 auto; text-align: right; width: 610px; }
 div.posterous_topnav_container li { display: inline; margin-left: 0.75em;  }
 div.posterous_topnav_container li a { color: #eee; }
 
-#header { margin: 60px 0 10px; padding: 0 0 0.5em; }
-#header h1 { font-size: 3em; line-height: 1; margin: 0; }
-#header h1 a { text-decoration: none; }
-#header h2 { font-size: 1em; font-style: italic; line-height: 1.5; margin: 0.75em 0; }
+#hd { margin: 60px 0 10px; padding: 0 0 0.5em; }
+#hd h1 { font-size: 3em; line-height: 1; margin: 0; }
+#hd h1 a { text-decoration: none; }
+#hd h2 { font-size: 1em; font-style: italic; line-height: 1.5; margin: 0.75em 0; }
 
 /* POST STYLES */
 .post { border-bottom: 1px solid #ccc; margin: 0 0 20px; padding: 0 0 20px; position: relative;    }
@@ -41,8 +47,6 @@ div.posterous_topnav_container li a { color: #eee; }
 .post-footer { font-size: 0.71428em; line-height: 1.66667em; margin: 1.5em 0; text-align: right; }
 .posterous_quote_citation { margin: 10px 0px 10px 0px;}
 .bodytext { padding-top: 24px;
-           font-family: Arial,"MS Trebuchet",sans-serif;
-           font-size: 1.2em;
            font-weight:400;
            font-style:normal;
            color:#222222;
@@ -52,17 +56,20 @@ div.bodytext > *:first-child { margin-top: 0px !important; margin-bottom: 0px !i
 .bodytext h2 a { text-decoration: none; }
 
 /* EDITBOX */
-.editbox a { text-decoration: none; font-family: Arial, Helvetica, sans-serif; font-size: 10px; }
+.editbox a { text-decoration: none; }
 .editbox ul { margin: 0px; padding: 0px; }
+.editbox li{float:left; margin:0 1em 0 0;} 
 div.editbox { visibility: hidden; height: 16px; position: absolute; top: 0px; }
 div.post:hover div.editbox { visibility: visible; }
 
 
 /* PAGINATION */
-.pagination { font-size: 0.85714em; text-align: center; }
-.pagination a, .pagination .current, .pagination .prev_page, .pagination .next_page { padding: 0 0.5em; text-decoration: none; }
-.pagination a:hover { background: {color:Accent Color}; color: #eee; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px;  }
-.pagination .current { background: {color:Accent Color}; color: #eee; font-weight: bold; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; }
+.pagination { font-size: 1em; text-align: center; }
+.pagination a, .pagination .current, .pagination .prev_page, .pagination .next_page { padding: 0.5em 1em; text-decoration: none; 
+background: #efefef; color: #222; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px;
+}
+.pagination a:hover { background: #222; color: #eee; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px;  }
+.pagination .current { background: #ccc; color: #eee; font-weight: bold; border-radius: 3px; -webkit-border-radius: 3px; -moz-border-radius: 3px; }
 .pagination .disabled { color: #aaa; }
 
 /* EDITBOX */
