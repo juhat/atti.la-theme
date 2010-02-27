@@ -1,0 +1,11 @@
+#hd{
+  height: 200px;
+  background:#ccc;
+}
+#bd{
+  border:1px solid #222;
+}
+#content{
+  border: 1px solid red;
+  min-height: 500px;
+}

@@ -2,20 +2,75 @@
  "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-   <title>YUI Base Page</title>
-   <link rel="stylesheet" href="reset-fonts-grids.css" type="text/css">
+  <title>YUI Base Page</title>
+  <link rel="stylesheet" href="reset-fonts-grids.css" type="text/css">
+  <link rel="stylesheet" href="application.css" type="text/css">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+  <style type="text/css">
+  </style>
 </head>
 <body>
 <div id="doc2" class="yui-t5">
    <div id="hd"><h1>Header</h1></div>
    <div id="bd">
 	<div id="yui-main">
-	<div class="yui-b"><div class="yui-g">
+	<div class="yui-b"><div class="yui-g" id="content">
+
+
+
+    <div class="post" id="postunit_12288180"> 
+                    <span class="date"><a href="http://atti.la/index-irta-marokkorol" class="permalink">Feb 25</a></span> 
+                	<div class='editbox' id=""> 
+    <ul class="mini_commands"> 
+    	<li><a href="http://posterous.com/posts/edit/12288180">Edit</a></li> 
+    	<li><a href="/posts/destroy/12288180" onclick="if (confirm('Are you sure you want to delete this post?')) { var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'delete'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', 'db2188df368444ae46e211a62e65f5f87acd97c3'); f.appendChild(s);f.submit(); };return false;">Delete</a></li> 
+
+    		<li><a href="#" id='tag_link_id_12288180'>Tag</a></li> 
+
+    	<li><a href="#" id='crosspost_link_id_12288180'>Autopost</a></li> 
+    </ul> 
+    <script type="text/javascript"> 
+    	document.observe('dom:loaded', function() {
+    		new PModal('tag_link_id_12288180', '/tag/edittags', { post_id: 12288180 }, {height: 210});
+    		new PModal('crosspost_link_id_12288180', '/autopost/crosspost', { post_id: 12288180 }, {width: 300, height: 300});
+    	});
+    </script> 
+          				</div> 
+                    <div class="bodytext"> 
+                        <h2 style="padding-bottom: 15px;"><a href="http://atti.la/index-irta-marokkorol">INDEX írta Marokkóról</a></h2> 
+                        <blockquote class="gmail_quote" style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0.8ex; border-left-width: 1px; border-left-color: rgb(204, 204, 204); border-left-style: solid; padding-left: 1ex;"> A munkanélküliségből és inflációból számolt mutató szerint még Marokkóban és Kolumbiában is jobb élni.</blockquote><p /><div>Az komolyan hangzik. Én ha már választani lehet Marokkóba emigrálnék. Vagy ha Kuba és Mexikó is lehagyott minket akkor talán oda. :)</div> 
+                    </div> 
+                    <div class="posterous_retweet_widget"> 
+                        <img src="/images/icons/services/twitter11.png" style="vertical-align: middle; position: relative; top: -1px;" /> 
+                        <span id="retweet_count_12288180"> 
+                          <a href="http://www.backtype.com/search?q=http://atti.la/index-irta-marokkorol"> 
+                            <span id="num_tweets_12288180" class="posterous_retweet_count">Loading</span> 
+                            <span id="retweet_count_label_12288180">mentions</span> 
+                          </a> 
+                        </span> 
+                        <a href="#" id="retweet_link_for_post_id_12288180" class="posterous_retweet">Retweet</a> 
+                <script type="text/javascript"> 
+                var pmodal_retweet_12288180 = new PModal('retweet_link_for_post_id_12288180', '/posts/retweet', {post_id: 12288180, authenticity_token: window._token}, { width: 500, height: 160, identifier: 'retweet_modal_<%=post.id%>'}) 
+                </script> 
+                    </div> 
+                    <div style="margin-top: 20px;"> 
+            <div id="post_commentarea_12288180"></div>  
+                        <p><a href="#" id="comment_link_12288180" style="font-size:1.4em">Hozzászólások</a> [0]</p>  
+                <script type="text/javascript"> 
+          				var pcomment_12288180 = null;
+          				document.observe('dom:loaded', function() {			
+          					pcomment_12288180 = new PComment($('comment_link_12288180'), '12288180', $('post_commentarea_12288180'));					
+          				});
+          			</script> 
+                    </div> 
+                  </div> <!-- end .post -->
 	<!-- YOUR DATA GOES HERE -->
 	</div>
 </div>
 	</div>
-	<div class="yui-b"><!-- YOUR NAVIGATION GOES HERE --></div>
+	<div class="yui-b" id="sidebar">
+    <!-- YOUR NAVIGATION GOES HERE -->
+	</div>
 	
 	</div>
    <div id="ft"><p>Footer</p></div>
