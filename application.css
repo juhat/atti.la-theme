@@ -5,6 +5,10 @@
 #bd{
   
 }
+.bg2{
+  background: url(images/pattern1.png) repeat-x 0 -29px;
+  
+}
 #content{
   border-right:1px dashed #222;
   
@@ -12,9 +16,9 @@
 }
 /* BASE STYLES */
 html{
-  background: url(images/pattern1.png) repeat-x 0 -29px;
 }
 body{
+  background: #F9FDFE url(images/bg_moz.jpg) repeat-x top;
   font-family: Skolar,Georgia,Cambria,"Times New Roman",Times,serif;
   color:#222;
 }
