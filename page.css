@@ -1,0 +1,78 @@
+/* common styling */
+/* set up the overall width of the menu div and the margins */
+.menu2 {
+height:31px;
+padding:0;
+margin:0 auto; 
+position:relative;
+z-index:1;
+}
+/* remove the bullets and set the margin and padding to zero for the unordered list */
+.menu2 ul {
+padding:0; 
+margin:0;
+list-style-type: none;
+border:0;
+}
+/* float the list so that the items are in a line */
+.menu2 ul li {
+display:block;
+float:left;
+width:51px;
+height:31px;
+}
+/* style the links to be 50px wide by 31px high with a right border 1px solid white. Set the background color and the font size. */
+.menu2 ul li a, .menu2 ul li a:visited {
+display:block; 
+float:left;
+text-align:center; 
+text-decoration:none; 
+width:50px; 
+height:31px; 
+color:#ddd;
+border-right:1px solid #fff;
+line-height:30px; 
+}
+
+/* clear the float at the end of each line of four slides */
+span.clr {display:block; clear:both; width:0; height:0; font-size:0; line-height:0;}
+
+/* make the dropdown ul invisible */
+.menu2 ul li ul {
+display: none;
+}
+
+/* remove the table styling */
+table {
+border-collapse:collapse;
+margin:0; 
+padding:0;
+}
+
+/* specific to non IE browsers */
+/* set the background and foreground color of the main menu li link on hover */
+.menu2 ul li:hover a{
+color:#fff; 
+cursor:default;
+}
+
+/* make the sub menu ul visible and position it beneath the first list item */
+.menu2 ul li:hover ul {
+text-align:left;
+display:block; 
+position:absolute; 
+top:31px; 
+left:0;
+right:0;
+}
+
+/* make the sub menu ul li the full width with padding and border. */
+.menu2 ul li:hover ul li {
+cursor:pointer;
+width:100%;
+border-width:20px 5px;
+background:#ddd; 
+color:#fff;
+cursor:default;
+height:400px;
+}
